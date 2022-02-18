@@ -41,23 +41,24 @@ const Button = styled(`button`, {
         borderRadius: `$full`,
       },
     },
-    shadow: {
+    outlined: {
       true: {
-        boxShadow: `0 0 8px $$shadowColor`,
+        boxShadow: `0 0 0 2px $$shadowColor`,
       },
     },
   },
   compoundVariants: [
     {
       color: `primary`,
-      shadow: true,
+      outlined: true,
       css: {
         $$shadowColor: `$colors$primary`,
+        background: `transparent`,
       },
     },
     {
       color: `shape`,
-      shadow: true,
+      outlined: true,
       css: {
         $$shadowColor: `$colors$shape`,
       },
@@ -68,7 +69,7 @@ const Button = styled(`button`, {
     color: `primary`,
     size: `small`,
     radius: `default`,
-    shadow: `true`,
+    outlined: `true`,
   },
 });
 
