@@ -11,5 +11,15 @@ const { styled, getCssText, globalCss } = createStitches({
       text: `#C4C4CC`,
       shape: `#29292E`,
     },
+    space: {
+      "0": `0px`,
+      "1": `1px`,
+      "4": `0.25rem`,
+      "8": `0.5rem`,
+      "12": `0.75rem`,
+      "16": `1rem`,
+      "24": `1.5rem`,
+      "32": `2rem`,
+    },
   },
 });
