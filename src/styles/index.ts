@@ -1,4 +1,4 @@
-import { createStitches } from "@stitches/react";
+import { createStitches, ScaleValue } from "@stitches/react";
 
 const { styled, getCssText, globalCss } = createStitches({
   theme: {
@@ -28,5 +28,15 @@ const { styled, getCssText, globalCss } = createStitches({
     fonts: {
       default: `Roboto`,
     },
+  },
+  utils: {
+    paddingX: (value: ScaleValue<"space">) => ({
+      paddingLeft: value,
+      paddingRight: value,
+    }),
+    paddingY: (value: ScaleValue<"space">) => ({
+      paddingTop: value,
+      paddingBottom: value,
+    }),
   },
 });
