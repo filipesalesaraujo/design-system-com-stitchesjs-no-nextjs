@@ -25,5 +25,8 @@ const { styled, getCssText, globalCss } = createStitches({
       full: `99999px`,
       default: `5px`,
     },
+    fonts: {
+      default: `Roboto`,
+    },
   },
 });
