@@ -2,7 +2,7 @@ import { createStitches, ScaleValue } from "@stitches/react";
 
 export const { styled, getCssText, globalCss } = createStitches({
   theme: {
-    color: {
+    colors: {
       primary: `#D73628`,
       primaryLight: `#FC4737`,
       primaryDark: `#AD1E12 `,
