@@ -21,5 +21,9 @@ const { styled, getCssText, globalCss } = createStitches({
       "24": `1.5rem`,
       "32": `2rem`,
     },
+    radii: {
+      full: `99999px`,
+      default: `5px`,
+    },
   },
 });
