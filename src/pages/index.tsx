@@ -31,10 +31,19 @@ const Button = styled(`button`, {
         flex: `1`,
       }
     },
+    radius: {
+      default: {
+        borderRadius: `$default`,
+      },
+      full: {
+        borderRadius: `$full`,
+      }
+    }
   },
   defaultVariants: {
     color: `primary`,
     size: `small`,
+    radius: `default`,
   },
 });
 
@@ -42,7 +51,7 @@ export default function Home() {
   return (
     <Flex css={{ gap: "$16", padding: `$16` }}>
       <Button type="button">Experts Club</Button>
-      <Button size='full' color="shape" type="button">
+      <Button radius="full" size='full' color="shape" type="button">
         Experts Club
       </Button>
     </Flex>
